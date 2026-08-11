@@ -1,0 +1,116 @@
+{
+  "claim": "C11",
+  "engine": "scripts/ep_oja.py (3a31b85)",
+  "config": {
+    "P": 53,
+    "HIDDEN": 256,
+    "K_CONN": 8,
+    "LR_MIRROR": 0.5,
+    "N_WARMUP": 500,
+    "WCLIP": 5.0,
+    "BETA": 2.0,
+    "T_SETTLE": 10,
+    "LR_INF": 0.5,
+    "seed": 0
+  },
+  "checkpoints": [
+    {
+      "phase": "warmup",
+      "step": 100,
+      "cos": 0.9432100653648376,
+      "rel_err": 0.3342695509704847
+    },
+    {
+      "phase": "warmup",
+      "step": 200,
+      "cos": 0.9855948090553284,
+      "rel_err": 0.17141478918777373
+    },
+    {
+      "phase": "warmup",
+      "step": 300,
+      "cos": 0.9948081374168396,
+      "rel_err": 0.10313672724332772
+    },
+    {
+      "phase": "warmup",
+      "step": 400,
+      "cos": 0.9978126883506775,
+      "rel_err": 0.06690295439523536
+    },
+    {
+      "phase": "warmup",
+      "step": 500,
+      "cos": 0.998992919921875,
+      "rel_err": 0.045344238342115296
+    },
+    {
+      "phase": "joint",
+      "step": 501,
+      "cos": 0.9990002512931824,
+      "rel_err": 0.3583002764377346
+    },
+    {
+      "phase": "joint",
+      "step": 600,
+      "cos": 0.9580152630805969,
+      "rel_err": 0.3243664841081976
+    },
+    {
+      "phase": "joint",
+      "step": 700,
+      "cos": 0.9068801403045654,
+      "rel_err": 0.5151014989213686
+    },
+    {
+      "phase": "joint",
+      "step": 800,
+      "cos": 0.867682933807373,
+      "rel_err": 0.6402578769461064
+    },
+    {
+      "phase": "joint",
+      "step": 900,
+      "cos": 0.8199412226676941,
+      "rel_err": 0.6535754575752082
+    },
+    {
+      "phase": "joint",
+      "step": 1000,
+      "cos": 0.7535273432731628,
+      "rel_err": 0.6950222031064229
+    },
+    {
+      "phase": "joint",
+      "step": 1100,
+      "cos": 0.7413164377212524,
+      "rel_err": 0.7023614791843986
+    },
+    {
+      "phase": "joint",
+      "step": 1200,
+      "cos": 0.750581681728363,
+      "rel_err": 0.6974756088940329
+    },
+    {
+      "phase": "joint",
+      "step": 1300,
+      "cos": 0.7714635133743286,
+      "rel_err": 0.674440978493527
+    },
+    {
+      "phase": "joint",
+      "step": 1400,
+      "cos": 0.7849225401878357,
+      "rel_err": 0.6622280896738819
+    },
+    {
+      "phase": "joint",
+      "step": 1500,
+      "cos": 0.8023560047149658,
+      "rel_err": 0.6417184953453693
+    }
+  ],
+  "paper_claim": "warmup cosine reaches 0.999 at step 500; joint-training alignment falls to ~0.75-0.80",
+  "runtime_s": 559.0441279411316
+}

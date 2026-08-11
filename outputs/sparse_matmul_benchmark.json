@@ -1,0 +1,46 @@
+{
+  "task": "t_52713334",
+  "date": "2026-08-11",
+  "config": {
+    "N": 1536,
+    "B": 128,
+    "L": 6,
+    "density": 0.094,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "torch": "2.6.0+cu124",
+    "cuda": "12.4"
+  },
+  "forward": {
+    "dense_ms": 1.9763604598119853,
+    "sparse_ms": 27.599952276796103,
+    "speedup": 0.07160738685311263,
+    "bit_diff": 1.430511474609375e-06,
+    "bit_identical": false
+  },
+  "learning": {
+    "dense_ms": 0.2542220917530358,
+    "dense_mask_ms": 0.4632441303692758,
+    "gather_ms": 8.770037242211401,
+    "gather_speedup_vs_dense": 0.028987572655841155,
+    "learn_bit_diff": 2.384185791015625e-07
+  },
+  "memory": {
+    "dense_mb": 9.437184,
+    "sparse_mb": 1.775616,
+    "reduction": 5.314878892733564
+  },
+  "density_sweep": [
+    {"density": 0.004557, "nnz_per_row": 7,   "dense_ms": 0.3045, "sparse_ms": 3.9574, "speedup": 0.0769, "bit_diff": 2.38e-07},
+    {"density": 0.009766, "nnz_per_row": 15,  "dense_ms": 0.3315, "sparse_ms": 3.9591, "speedup": 0.0837, "bit_diff": 3.58e-07},
+    {"density": 0.049479, "nnz_per_row": 76,  "dense_ms": 0.3374, "sparse_ms": 4.6646, "speedup": 0.0723, "bit_diff": 9.54e-07},
+    {"density": 0.093750, "nnz_per_row": 144, "dense_ms": 0.3281, "sparse_ms": 5.3869, "speedup": 0.0609, "bit_diff": 1.43e-06},
+    {"density": 0.099610, "nnz_per_row": 153, "dense_ms": 0.3597, "sparse_ms": 5.4858, "speedup": 0.0656, "bit_diff": 1.43e-06},
+    {"density": 0.149740, "nnz_per_row": 230, "dense_ms": 0.3237, "sparse_ms": 10.084, "speedup": 0.0321, "bit_diff": 1.91e-06},
+    {"density": 0.199870, "nnz_per_row": 307, "dense_ms": 0.3594, "sparse_ms": 10.860, "speedup": 0.0331, "bit_diff": 2.62e-06},
+    {"density": 0.299479, "nnz_per_row": 460, "dense_ms": 0.3570, "sparse_ms": 16.232, "speedup": 0.0220, "bit_diff": 4.29e-06},
+    {"density": 0.500000, "nnz_per_row": 768, "dense_ms": 0.3270, "sparse_ms": 20.474, "speedup": 0.0160, "bit_diff": 6.20e-06}
+  ],
+  "crossover_density": null,
+  "verdict": "Sparse compute on GPU at N=1536, 9.4% density is a 14x LOSS. Dense cuBLAS + post-hoc mask is optimal."
+}

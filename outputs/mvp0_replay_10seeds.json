@@ -1,0 +1,1191 @@
+{
+ "experiment": "MVP-0 CLS WAKE/SLEEP REPLAY (flat substrate isolator)",
+ "config": {
+  "P": 53,
+  "K_FREQ": 26,
+  "IN_DIM": 104,
+  "HIDDEN": 256,
+  "K_CONN": 8,
+  "N_BLOCKS": 4,
+  "N_WAKE": 200,
+  "N_SLEEP": 200,
+  "steps_per_arm": 1600,
+  "N_SEEDS": 10,
+  "modes": [
+   "tied",
+   "oja"
+  ],
+  "cortex": "EP beta=2.0 T=10 lr_inf=0.50",
+  "oja": "lr_mirror=0.50 N_WARMUP=500",
+  "chance": 0.0189
+ },
+ "source_log": "outputs/results_10seed.txt (UTF-16, commit 3745dbf)",
+ "arms": [
+  "wake_sleep",
+  "wake_extra",
+  "shuffled",
+  "random_replay",
+  "label_null"
+ ],
+ "per_mode_per_seed": {
+  "tied": {
+   "0": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.372,
+      0.941,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.006
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.372,
+      0.735,
+      0.781,
+      0.783
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.005
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.0
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.02,
+      0.02,
+      0.018,
+      0.012
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.003
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.02,
+      0.014,
+      0.014,
+      0.014
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.009
+    }
+   },
+   "1": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.379,
+      0.77,
+      0.993,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.013
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.379,
+      0.498,
+      0.537,
+      0.534
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.003
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.002
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.027,
+      0.03,
+      0.02,
+      0.009
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.001
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.016,
+      0.025,
+      0.027,
+      0.027
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.006
+    }
+   },
+   "2": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.37,
+      0.941,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.002
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.37,
+      0.587,
+      0.669,
+      0.724
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.003
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.009
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.025,
+      0.021,
+      0.018,
+      0.021
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.001
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.025,
+      0.018,
+      0.012,
+      0.012
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.012
+    }
+   },
+   "3": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.393,
+      0.911,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.011
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.393,
+      0.582,
+      0.66,
+      0.701
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.015
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.998,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.005
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.016,
+      0.02,
+      0.021,
+      0.023
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.002
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.014,
+      0.002,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.002
+    }
+   },
+   "4": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.383,
+      0.843,
+      0.998,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.005
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.383,
+      0.498,
+      0.553,
+      0.626
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.006
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.002
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.032,
+      0.025,
+      0.03,
+      0.011
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.018
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.012,
+      0.005,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.0
+    }
+   },
+   "5": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.37,
+      0.9,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.009
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.37,
+      0.671,
+      0.632,
+      0.658
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.006
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.0
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.025,
+      0.018,
+      0.025,
+      0.018
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.007
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.027,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.01
+    }
+   },
+   "6": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.351,
+      0.842,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.003
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.351,
+      0.52,
+      0.687,
+      0.674
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.006
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.001
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.012,
+      0.021,
+      0.023,
+      0.016
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.003
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.028,
+      0.043,
+      0.046,
+      0.046
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.003
+    }
+   },
+   "7": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.377,
+      0.767,
+      0.996,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.009
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.377,
+      0.496,
+      0.617,
+      0.664
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.006
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.015
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.028,
+      0.032,
+      0.021,
+      0.021
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.003
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.02,
+      0.014,
+      0.011,
+      0.011
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.015
+    }
+   },
+   "8": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.354,
+      0.737,
+      0.989,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.007
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.354,
+      0.479,
+      0.532,
+      0.573
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.0
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.004
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.025,
+      0.02,
+      0.02,
+      0.025
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.001
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.005,
+      0.005,
+      0.007,
+      0.007
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.008
+    }
+   },
+   "9": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.381,
+      0.89,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.0
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.381,
+      0.585,
+      0.735,
+      0.73
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.004
+    },
+    "shuffled": {
+     "held_out_traj": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.009
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.012,
+      0.023,
+      0.023,
+      0.009
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": -0.005
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.007,
+      0.002,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.016
+    }
+   }
+  },
+  "oja": {
+   "0": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.039,
+      0.719,
+      0.998,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.89
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.039,
+      0.39,
+      0.546,
+      0.52
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.869
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.445,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.862
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.027,
+      0.018,
+      0.02,
+      0.018
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.931
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.014,
+      0.009,
+      0.014,
+      0.014
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.9
+    }
+   },
+   "1": {
+    "shuffled": {
+     "held_out_traj": [
+      0.402,
+      1.0,
+      0.998,
+      0.998
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.855
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.007,
+      0.028,
+      0.027,
+      0.027
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.897
+    }
+   },
+   "2": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.036,
+      0.715,
+      0.989,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.893
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.036,
+      0.317,
+      0.4,
+      0.575
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.867
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.224,
+      0.998,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.858
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.027,
+      0.021,
+      0.032,
+      0.023
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.926
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.028,
+      0.016,
+      0.012,
+      0.012
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.891
+    }
+   },
+   "3": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.03,
+      0.617,
+      0.982,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.897
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.03,
+      0.308,
+      0.45,
+      0.466
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.87
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.258,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.864
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.012,
+      0.018,
+      0.023,
+      0.016
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.925
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.014,
+      0.005,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.895
+    }
+   },
+   "4": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.03,
+      0.74,
+      0.984,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.901
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.03,
+      0.379,
+      0.5,
+      0.543
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.867
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.386,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.858
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.021,
+      0.021,
+      0.023,
+      0.023
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.925
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.014,
+      0.007,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.886
+    }
+   },
+   "5": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.036,
+      0.722,
+      0.993,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.892
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.036,
+      0.402,
+      0.441,
+      0.495
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.868
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.432,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.864
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.018,
+      0.02,
+      0.018,
+      0.025
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.927
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.011,
+      0.009,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.887
+    }
+   },
+   "6": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.036,
+      0.635,
+      0.977,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.892
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.036,
+      0.319,
+      0.407,
+      0.47
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.856
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.233,
+      0.996,
+      0.998,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.86
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.012,
+      0.016,
+      0.016,
+      0.012
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.923
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.018,
+      0.044,
+      0.046,
+      0.046
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.882
+    }
+   },
+   "7": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.028,
+      0.589,
+      0.957,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.887
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.028,
+      0.29,
+      0.361,
+      0.431
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.863
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.174,
+      0.996,
+      0.998,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.854
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.011,
+      0.021,
+      0.02,
+      0.021
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.925
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.021,
+      0.009,
+      0.014,
+      0.011
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.889
+    }
+   },
+   "8": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.05,
+      0.717,
+      0.968,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.897
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.05,
+      0.34,
+      0.443,
+      0.448
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.868
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.228,
+      0.996,
+      0.998,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.854
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.021,
+      0.036,
+      0.012,
+      0.027
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.925
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.016,
+      0.016,
+      0.007,
+      0.007
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.898
+    }
+   },
+   "9": {
+    "wake_sleep": {
+     "held_out_traj": [
+      0.037,
+      0.651,
+      0.995,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.889
+    },
+    "wake_extra": {
+     "held_out_traj": [
+      0.037,
+      0.317,
+      0.452,
+      0.511
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.863
+    },
+    "shuffled": {
+     "held_out_traj": [
+      0.123,
+      0.998,
+      1.0,
+      1.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.851
+    },
+    "random_replay": {
+     "held_out_traj": [
+      0.012,
+      0.014,
+      0.016,
+      0.012
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.921
+    },
+    "label_null": {
+     "held_out_traj": [
+      0.021,
+      0.002,
+      0.0,
+      0.0
+     ],
+     "steps": 1600,
+     "cos_fb_woutT": 0.894
+    }
+   }
+  }
+ },
+ "data_quality": {
+  "tied": {
+   "seeds_with_complete_wake_arms": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "seeds_missing_wake_arms": [],
+   "note": "oja seed 1: source log contains ONLY shuffled + label_null arms (wake_sleep/wake_extra lines absent \u2014 incomplete run, likely interrupted). The banked C10 mean +0.454 normalizes the 9-seed benefit sum by 10 (missing seed counted as 0); the 9 complete seeds show mean +0.505. Wilcoxon p uses the 9 complete seeds (exact p = 1/2^9 for all-positive) and matches the banked p=0.002."
+  },
+  "oja": {
+   "seeds_with_complete_wake_arms": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "seeds_missing_wake_arms": [
+    1
+   ],
+   "note": "oja seed 1: source log contains ONLY shuffled + label_null arms (wake_sleep/wake_extra lines absent \u2014 incomplete run, likely interrupted). The banked C10 mean +0.454 normalizes the 9-seed benefit sum by 10 (missing seed counted as 0); the 9 complete seeds show mean +0.505. Wilcoxon p uses the 9 complete seeds (exact p = 1/2^9 for all-positive) and matches the banked p=0.002."
+  }
+ },
+ "summary": {
+  "tied": {
+   "n_seeds_with_complete_arms": 10,
+   "final_acc_wake_sleep": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "final_acc_wake_extra": [
+    0.783,
+    0.534,
+    0.724,
+    0.701,
+    0.626,
+    0.658,
+    0.674,
+    0.664,
+    0.573,
+    0.73
+   ],
+   "per_seed_benefit": [
+    0.21699999999999997,
+    0.46599999999999997,
+    0.276,
+    0.29900000000000004,
+    0.374,
+    0.34199999999999997,
+    0.32599999999999996,
+    0.33599999999999997,
+    0.42700000000000005,
+    0.27
+   ],
+   "mean_benefit_over_complete_seeds": 0.3333,
+   "mean_benefit_over_all_10_slots": 0.3333,
+   "median_benefit": 0.331,
+   "seeds_positive_benefit": 10,
+   "note": "wake_sleep vs wake_extra: both 1600 steps (equal step counts); benefit = final held-out acc difference. wake_extra = extra wake training, no sleep replay. Banked C10 +0.454 == mean over 10 slots (missing seed = 0); +0.505 == mean over the 9 complete seeds.",
+   "wilcoxon_greater": {
+    "W": 55.0,
+    "p": 0.0009765625,
+    "method": "scipy",
+    "n": 10
+   }
+  },
+  "oja": {
+   "n_seeds_with_complete_arms": 9,
+   "final_acc_wake_sleep": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "final_acc_wake_extra": [
+    0.52,
+    0.575,
+    0.466,
+    0.543,
+    0.495,
+    0.47,
+    0.431,
+    0.448,
+    0.511
+   ],
+   "per_seed_benefit": [
+    0.48,
+    0.42500000000000004,
+    0.534,
+    0.45699999999999996,
+    0.505,
+    0.53,
+    0.569,
+    0.552,
+    0.489
+   ],
+   "mean_benefit_over_complete_seeds": 0.5046,
+   "mean_benefit_over_all_10_slots": 0.4541,
+   "median_benefit": 0.505,
+   "seeds_positive_benefit": 9,
+   "note": "wake_sleep vs wake_extra: both 1600 steps (equal step counts); benefit = final held-out acc difference. wake_extra = extra wake training, no sleep replay. Banked C10 +0.454 == mean over 10 slots (missing seed = 0); +0.505 == mean over the 9 complete seeds.",
+   "wilcoxon_greater": {
+    "W": 45.0,
+    "p": 0.001953125,
+    "method": "scipy",
+    "n": 9
+   }
+  }
+ },
+ "paper_row_C10": {
+  "claim": "replay benefit: Oja +0.454 (p=0.002), tied +0.333 (p=0.001)",
+  "computed_from_this_artifact": {
+   "oja_mean_over_10_slots": 0.4541,
+   "oja_mean_over_complete_seeds": 0.5046,
+   "oja_p": 0.001953125,
+   "tied_mean_over_10_slots": 0.3333,
+   "tied_mean_over_complete_seeds": 0.3333,
+   "tied_p": 0.0009765625
+  }
+ }
+}

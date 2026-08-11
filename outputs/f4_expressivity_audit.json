@@ -1,0 +1,25 @@
+{
+ "spec": "F4 expressivity audit (paper Figure F4 backing file)",
+ "date": "2026-08-11",
+ "kernel": "K(a,b) = cos(2*pi*k*a*b/p), p=53, k=1",
+ "rank1_svd": {
+  "rmse": 0.7004041959724747,
+  "r2": 0.03636363636363671,
+  "note": "best rank-1 Frobenius approximation (SVD truncation); matches paper's 0.700 and math-reviewer's 0.7004"
+ },
+ "rank27_svd": {
+  "rmse": 4.264614578959206e-15,
+  "r2": 1.0,
+  "note": "rank-(p+1)/2 SVD reconstruction; exact because rank(K)=27"
+ },
+ "kernel_rank": 27,
+ "layer0_empirical_fit": {
+  "rmse": 0.019,
+  "r2": 0.999,
+  "provenance": "reported in paper (Appendix B, F4) and PAPER1_SKELETON_v0_2; empirical full layer-0 fit with rich additive-Fourier features; not re-derived in this artifact"
+ },
+ "paper_values": {
+  "single_neuron_rmse": 0.7,
+  "layer0_rmse": 0.019
+ }
+}

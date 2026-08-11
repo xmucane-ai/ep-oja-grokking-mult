@@ -1,0 +1,226 @@
+{
+ "HS": [
+  {
+   "seed": 0,
+   "final_ens_acc": 0.22953736782073975,
+   "best_ens_acc": 0.29893237352371216,
+   "grok_step": null
+  },
+  {
+   "seed": 1,
+   "final_ens_acc": 0.2526690363883972,
+   "best_ens_acc": 0.33985763788223267,
+   "grok_step": null
+  },
+  {
+   "seed": 2,
+   "final_ens_acc": 0.32206404209136963,
+   "best_ens_acc": 0.3505338132381439,
+   "grok_step": null
+  },
+  {
+   "seed": 3,
+   "final_ens_acc": 0.24911031126976013,
+   "best_ens_acc": 0.31494662165641785,
+   "grok_step": null
+  },
+  {
+   "seed": 4,
+   "final_ens_acc": 0.18861210346221924,
+   "best_ens_acc": 0.2651245594024658,
+   "grok_step": null
+  },
+  {
+   "seed": 5,
+   "final_ens_acc": 0.3487544357776642,
+   "best_ens_acc": 0.3896797001361847,
+   "grok_step": null
+  },
+  {
+   "seed": 6,
+   "final_ens_acc": 0.2971530258655548,
+   "best_ens_acc": 0.354092538356781,
+   "grok_step": null
+  },
+  {
+   "seed": 7,
+   "final_ens_acc": 0.2775800824165344,
+   "best_ens_acc": 0.3451957404613495,
+   "grok_step": null
+  },
+  {
+   "seed": 8,
+   "final_ens_acc": 0.3790035545825958,
+   "best_ens_acc": 0.3790035545825958,
+   "grok_step": null
+  },
+  {
+   "seed": 9,
+   "final_ens_acc": 0.2935943007469177,
+   "best_ens_acc": 0.33985763788223267,
+   "grok_step": null
+  }
+ ],
+ "FV": [
+  {
+   "seed": 0,
+   "final_ens_acc": 0.9395017623901367,
+   "best_ens_acc": 0.9715302586555481,
+   "grok_step": 400
+  },
+  {
+   "seed": 1,
+   "final_ens_acc": 0.9110320210456848,
+   "best_ens_acc": 0.95551598072052,
+   "grok_step": 600
+  },
+  {
+   "seed": 2,
+   "final_ens_acc": 0.7615658044815063,
+   "best_ens_acc": 0.9537366628646851,
+   "grok_step": 500
+  },
+  {
+   "seed": 3,
+   "final_ens_acc": 0.8861209750175476,
+   "best_ens_acc": 0.9323843121528625,
+   "grok_step": 500
+  },
+  {
+   "seed": 4,
+   "final_ens_acc": 0.9679715037345886,
+   "best_ens_acc": 0.9679715037345886,
+   "grok_step": 400
+  },
+  {
+   "seed": 5,
+   "final_ens_acc": 0.9572953581809998,
+   "best_ens_acc": 0.9679715037345886,
+   "grok_step": 400
+  },
+  {
+   "seed": 6,
+   "final_ens_acc": 0.9608541131019592,
+   "best_ens_acc": 0.9715302586555481,
+   "grok_step": 400
+  },
+  {
+   "seed": 7,
+   "final_ens_acc": 0.935943067073822,
+   "best_ens_acc": 0.9626334309577942,
+   "grok_step": 700
+  },
+  {
+   "seed": 8,
+   "final_ens_acc": 0.9466192126274109,
+   "best_ens_acc": 0.9768683314323425,
+   "grok_step": 400
+  },
+  {
+   "seed": 9,
+   "final_ens_acc": 0.935943067073822,
+   "best_ens_acc": 0.9644128084182739,
+   "grok_step": 400
+  }
+ ],
+ "SS": [
+  {
+   "seed": 0,
+   "final_ens_acc": 0.29893237352371216,
+   "best_ens_acc": 0.3896797001361847,
+   "grok_step": null
+  },
+  {
+   "seed": 1,
+   "final_ens_acc": 0.3007117509841919,
+   "best_ens_acc": 0.34697508811950684,
+   "grok_step": null
+  },
+  {
+   "seed": 2,
+   "final_ens_acc": 0.26156583428382874,
+   "best_ens_acc": 0.435943067073822,
+   "grok_step": null
+  },
+  {
+   "seed": 3,
+   "final_ens_acc": 0.3985764980316162,
+   "best_ens_acc": 0.3985764980316162,
+   "grok_step": null
+  },
+  {
+   "seed": 4,
+   "final_ens_acc": 0.4911032021045685,
+   "best_ens_acc": 0.5427046418190002,
+   "grok_step": null
+  },
+  {
+   "seed": 5,
+   "final_ens_acc": 0.5106761455535889,
+   "best_ens_acc": 0.5231316685676575,
+   "grok_step": null
+  }
+ ],
+ "CC3": [
+  {
+   "seed": 0,
+   "final_ens_acc": 0.954,
+   "best_ens_acc": 0.988,
+   "grok_step": 400
+  },
+  {
+   "seed": 1,
+   "final_ens_acc": 0.92,
+   "best_ens_acc": 0.972,
+   "grok_step": 400
+  },
+  {
+   "seed": 2,
+   "final_ens_acc": 0.913,
+   "best_ens_acc": 0.94,
+   "grok_step": 400
+  },
+  {
+   "seed": 3,
+   "final_ens_acc": 0.938,
+   "best_ens_acc": 0.938,
+   "grok_step": 500
+  },
+  {
+   "seed": 4,
+   "final_ens_acc": 0.874,
+   "best_ens_acc": 0.97,
+   "grok_step": 600
+  },
+  {
+   "seed": 5,
+   "final_ens_acc": 0.956,
+   "best_ens_acc": 0.975,
+   "grok_step": 400
+  },
+  {
+   "seed": 6,
+   "final_ens_acc": 0.963,
+   "best_ens_acc": 0.975,
+   "grok_step": 400
+  },
+  {
+   "seed": 7,
+   "final_ens_acc": 0.956,
+   "best_ens_acc": 0.968,
+   "grok_step": 500
+  },
+  {
+   "seed": 8,
+   "final_ens_acc": 0.952,
+   "best_ens_acc": 0.984,
+   "grok_step": 300
+  },
+  {
+   "seed": 9,
+   "final_ens_acc": 0.963,
+   "best_ens_acc": 0.963,
+   "grok_step": 500
+  }
+ ]
+}

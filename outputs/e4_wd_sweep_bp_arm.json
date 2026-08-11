@@ -1,0 +1,123 @@
+{
+ "probe": "E4_wd_sweep",
+ "task": "t_4dd24b8f",
+ "parent": "t_a8d24443",
+ "hypothesis": "Spec \u00a71.2: sparse connectivity inflates wd:gradient ratio; wd=1.0 suppresses grokking-circuit weights.",
+ "config": {
+  "wd_values": [
+   0.0,
+   0.1,
+   1.0
+  ],
+  "seeds": [
+   0,
+   4
+  ],
+  "steps": 3000,
+  "task": "mult",
+  "L": 6,
+  "N": 1536,
+  "lr": 0.001,
+  "optimizer": "AdamW",
+  "batch_size": 128,
+  "batch_note": "Mini-batch instead of full-batch for CPU feasibility. wd:gradient ratio is batch-size independent.",
+  "ste": true,
+  "grad_clip": 1.0
+ },
+ "results": {
+  "1.0": {
+   "wd": 1.0,
+   "n_seeds": 1,
+   "window_avg_mean": 0.9523105382919311,
+   "window_avg_std": 0.0,
+   "final_mean": 0.9574861526489258,
+   "final_std": 0.0,
+   "best_mean": 0.9593345522880554,
+   "grok_rate_window": "1/1",
+   "mean_grok_step": 1600.0,
+   "per_seed_windows": [
+    0.9523105382919311
+   ],
+   "per_seed_finals": [
+    0.9574861526489258
+   ],
+   "per_seed_bests": [
+    0.9593345522880554
+   ],
+   "per_area_diagnostics_avg": {
+    "grad_norms_per_layer": [
+     0.0007810266688466072,
+     0.0007219950784929097,
+     0.0004069366550538689,
+     0.00020583849982358515,
+     0.00011559436825336888,
+     7.298550917766988e-05
+    ],
+    "firing_rates": [
+     0.0384267158806324,
+     0.23204295337200165,
+     0.2555999755859375,
+     0.1988779753446579,
+     0.16627247631549835,
+     0.1598663330078125
+    ],
+    "hoyer": [
+     0.5168308952698007,
+     0.4009794289035798,
+     0.5342417666689669,
+     0.6362925497604685,
+     0.6751435988146243,
+     0.6736151628867685
+    ]
+   }
+  },
+  "0.1": {
+   "wd": 0.1,
+   "n_seeds": 1,
+   "window_avg_mean": 0.8495378971099854,
+   "window_avg_std": 0.0,
+   "final_mean": 0.8669131398200989,
+   "final_std": 0.0,
+   "best_mean": 0.8669131398200989,
+   "grok_rate_window": "0/1",
+   "mean_grok_step": null,
+   "per_seed_windows": [
+    0.8495378971099854
+   ],
+   "per_seed_finals": [
+    0.8669131398200989
+   ],
+   "per_seed_bests": [
+    0.8669131398200989
+   ],
+   "per_area_diagnostics_avg": {
+    "grad_norms_per_layer": [
+     0.00046614266466349363,
+     0.00046823304728604853,
+     0.00042472773930057883,
+     0.0003596442984417081,
+     0.0003065206983592361,
+     0.0003242824459448457
+    ],
+    "firing_rates": [
+     0.11667633056640625,
+     0.2069040983915329,
+     0.2110239714384079,
+     0.21913909912109375,
+     0.22577667236328125,
+     0.23219044506549835
+    ],
+    "hoyer": [
+     0.17576817640907028,
+     0.3741079733722815,
+     0.48356471910217386,
+     0.5215441093969315,
+     0.5307063495227359,
+     0.5247552303160616
+    ]
+   }
+  }
+ },
+ "verdict": "wd=1.0 groks but lower wd doesn't \u2014 UNEXPECTED. wd=1.0 ENABLES grokking (classic Power et al. 2022 result), hypothesis FALSIFIED.",
+ "total_time_s": null
+}

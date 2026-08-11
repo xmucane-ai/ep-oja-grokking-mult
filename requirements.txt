@@ -1,0 +1,4 @@
+# Tested environment (paper disclosure): Python 3.11, PyTorch 2.6.0+cu124, CUDA 12.4, NVIDIA RTX 3060
+torch==2.6.0
+numpy>=1.24
+matplotlib>=3.7

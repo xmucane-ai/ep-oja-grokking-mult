@@ -1,0 +1,441 @@
+{
+  "spec": "Artifact provenance manifest \u2014 public repository xmucane-ai/ep-oja-grokking-mult",
+  "generated": "2026-08-11",
+  "environment": {
+    "python": "3.11",
+    "pytorch": "2.6.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA RTX 3060 12GB"
+  },
+  "note": "SHA256 hashes let a reviewer verify that a downloaded artifact is byte-identical to the one used to generate the paper's figures and tables. The commit SHAs cited in the paper refer to the private development history; this manifest is the public-repo-independent verification path. Added 4 history-sweep artifacts (boundary stage-2, I1/I2 crossing points, TBT laminar ledger) 2026-08-11.",
+  "artifacts": {
+    "outputs/TBT_LAMINAR_FINAL_LEDGER_t_5bfe1989.json": {
+      "sha256": "17bb4db82ae81cb14cc531d1529371095c8721bba52ade77d2423c39951ef473"
+    },
+    "outputs/basis_swap_v13_add-sanity_frac80_L6_N1536_T10.json": {
+      "sha256": "a86e36f70c20f5fb0b2cf6d9cb7eca14883b5d563329cfb28bc0f61ca7013302",
+      "config": {
+        "task": "add-sanity",
+        "P": 53,
+        "steps": 3000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "train_fractions": [
+          0.8
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/basis_swap_v13_mult-nostab_frac80_L6_N1536_T10.json": {
+      "sha256": "9918f992bfa84734fbc52c74f21e827e824135207be9f22bceafcbb238ccf2b4",
+      "config": {
+        "task": "mult-nostab",
+        "P": 53,
+        "steps": 3000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "train_fractions": [
+          0.8
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/basis_swap_v13_mult-stab_frac80_L6_N1536_T10.json": {
+      "sha256": "99fa51897cbaa2c462b4ece55a25c66e7810352d7502a2b43a0501178cfa7865",
+      "config": {
+        "task": "mult-stab",
+        "P": 53,
+        "steps": 3000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "train_fractions": [
+          0.8
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/boundary_map_arm3_stage1_seed0_all.json": {
+      "sha256": "3c81864f8cf6abfe4971a96f429f24f48e880525a6828bfa739ba5892754b71f",
+      "config": {
+        "task": "mult (E_mult discrete-log encoder)",
+        "P": 53,
+        "steps": 3000,
+        "seeds": [
+          0
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10
+      }
+    },
+    "outputs/boundary_map_arm3_stage2_seeds0-7_all.json": {
+      "sha256": "fabf16489d92f137c0810fb8c351a8dd34e255ee76436b1c93f0ccc29aedeff8"
+    },
+    "outputs/bp_control_arm1_mult_main_L6_N1536_T10.json": {
+      "sha256": "f969fcddd018b2209f7e3d325c698d2e2175cb00b231a2faa145175083e19e76",
+      "config": {
+        "task": "mult",
+        "P": 53,
+        "steps": 3000,
+        "t_inf": 10
+      }
+    },
+    "outputs/bp_control_arm1_mult_main_L6_N1536_T10_S10000.json": {
+      "sha256": "4ee2606114a34d0553cd99b31c06230508eb5cc8c32e72af5aa3d536ab9fa51c",
+      "config": {
+        "task": "mult",
+        "P": 53,
+        "steps": 10000,
+        "t_inf": 10
+      }
+    },
+    "outputs/bp_control_arm1_mult_main_L6_N1536_T10_S10000_n10.json": {
+      "sha256": "e3d7a7f781400497044e6915a2997a1873f2e21fe0f64cdfaaa008d60001dadf",
+      "config": {
+        "task": "mult",
+        "steps": 10000,
+        "seeds": null,
+        "L": 6,
+        "N": 1536,
+        "T": 10
+      }
+    },
+    "outputs/bp_control_arm1_mult_tcliff_L6_N1536.json": {
+      "sha256": "1cdcd9648b7466f002369c9eb3a36e6928130e254eac8a8d141551a5a18d804f",
+      "config": {
+        "task": "mult"
+      }
+    },
+    "outputs/c11_oja_run_artifact.json": {
+      "sha256": "c5db4db3c78ed33f86b8386942741e2a93b322b99f3e871669262f279af98f58"
+    },
+    "outputs/c6_exactness_verify.json": {
+      "sha256": "fede01fc099804c5d5043587710533dcd44ed5312d6a95de596e590c9dff85ee",
+      "config": {}
+    },
+    "outputs/coex/coex_C3_10seeds.json": {
+      "sha256": "63ea5cc2bf1421e2781b8f2dc7cf0f8bdf32d7ba13dbcce464df7e6b6ea525c3",
+      "config": {}
+    },
+    "outputs/coex/coex_Coex1_10seeds.json": {
+      "sha256": "95e0f408ee492eed356288327bfd7f6e6233306cd7bd1d2cc59c36add0f9e613",
+      "config": {}
+    },
+    "outputs/e4_wd_sweep_bp_arm.json": {
+      "sha256": "187cbfbe98d8396c55a05f500af939c827af6145e10cbf532b8cc40e7cd03899"
+    },
+    "outputs/ep_mult_tcliff_banking_L6_N1536.json": {
+      "sha256": "792657ced3fd62c7e9f6e3b28d3d06d2a4979b3aa08bfc07b7435e3f09ce8cb1",
+      "config": {
+        "task": "mult"
+      }
+    },
+    "outputs/f2_emult_add_L6_N1536_T10.json": {
+      "sha256": "ae3978d8f441e99fa37f8826840c18f7a9c030bbac7371ac7b3176dff9878b96",
+      "config": {
+        "steps": 3000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/f4_expressivity_audit.json": {
+      "sha256": "418abc263be2272b1039c7eb719c9058fbc293bac97451227a6c9cd2524ed364",
+      "config": {}
+    },
+    "outputs/fresh_seed_confirm_100-104_L6_N1536_T10.json": {
+      "sha256": "db8fa6cce3902309e6dfc62cc775443e0cec02ee38d694ffe30c5ee16d280392",
+      "config": {
+        "task": "mult-stab",
+        "P": 53,
+        "steps": 3000,
+        "seeds": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10
+      }
+    },
+    "outputs/l6eqcap_T10_10seeds.json": {
+      "sha256": "07ac5cd52817cf81c7496d72f8976b07ae1c49f3e9c75edae7f21e73f534b6b3",
+      "config": {
+        "steps": 2000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/l6eqcap_T1_10seeds.json": {
+      "sha256": "904a1b9af1491bd66807e4a6dc85f2e05815a715bae540302ff917751cbe09d6",
+      "config": {
+        "steps": 2000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 1,
+        "effective_T": 1
+      }
+    },
+    "outputs/l6eqcap_T5_10seeds.json": {
+      "sha256": "5129c0f1a76cf65f21e1926c442ccbe95906589ab39be63f25be5908ba129ed7",
+      "config": {
+        "steps": 2000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 5,
+        "effective_T": 5
+      }
+    },
+    "outputs/learned_enc_L6_1_s0-1-2.json": {
+      "sha256": "15146f8c877040aad2cbbf2ea862b365d6f1b300937d30b7a1b816fde7b3fc72",
+      "config": {}
+    },
+    "outputs/matched_add_L6_N1536_T10.json": {
+      "sha256": "2024c028dcb2909b797108011c7fb73ed1d80c90b2a81391ea6af39c47bf9044",
+      "config": {
+        "task": "add",
+        "steps": 2000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/matched_mult_L6_N1536_T10.json": {
+      "sha256": "59176b539e1c74e14c0b9c42c988963dbefefd527e06beb5a4b0c0e91c692d42",
+      "config": {
+        "task": "mult",
+        "steps": 2000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/matched_mult_L6_N1536_T10_alignment.json": {
+      "sha256": "4000c69003659a07d84d24a38ba5baa3ec01ced23013b47ee86a84308045e2c2",
+      "config": {}
+    },
+    "outputs/mvp0_replay_10seeds.json": {
+      "sha256": "ca3d57d0820a5b0ee81b6e107cef921b14635aa21666e716444b48905b963389",
+      "config": {
+        "P": 53
+      }
+    },
+    "outputs/neighborhood_sweep_stage0.json": {
+      "sha256": "9d52a63c7487906c1d3d5ac4fd20f19688f8319522e6d56d9f44fef830a1a4af",
+      "config": {
+        "seeds": [
+          0
+        ]
+      }
+    },
+    "outputs/p97wall_D2_p97_N1536_S8000.json": {
+      "sha256": "3cc38b8fea74e17445d09e98d2b8e47e6e8f0711fcbb80d2b3fd1e3db942ce4b",
+      "config": {
+        "steps": 8000,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_layers": 6,
+        "hidden_per_layer": 1536,
+        "t_inf": 10,
+        "effective_T": 10
+      }
+    },
+    "outputs/p97wall_I1_p29_N1536_S3000.json": {
+      "sha256": "4709bafc77033b2335dab9b4f177ab036a8f95ca433137a99be4a2308f07b167"
+    },
+    "outputs/p97wall_I2_p41_N1536_S3000.json": {
+      "sha256": "c852e96523375d51b2345bbd8501b70e419492dcb4fcabaab4c3ecd1a43aa1d7"
+    },
+    "outputs/prime_sweep_summary.json": {
+      "sha256": "519bf2b4404384f0e273b3def242c56775ed4158bd6568bfbdddbcbe5eaf3b9b",
+      "config": {}
+    },
+    "outputs/rca_e1_dense_mlp_h512_nh2_relu_wd1.0_S20000.json": {
+      "sha256": "5786276d2930648406cc966317a9fda1378d5dc121dfb9b28a73a7c45d286141",
+      "config": {
+        "steps": 20000,
+        "seeds": "0,4,9"
+      }
+    },
+    "outputs/results_10seed.txt": {
+      "sha256": "480041d4d18b68ee35dd066167f4b6a3d939f5292b5cbdd227cbf5535a7d2352"
+    },
+    "outputs/results_v14_temporal_dendritic_v3_N4096_L2.json": {
+      "sha256": "df24703fc97dba5e7a4db012ab45d507240364f3ddb92b53391668310305c63b",
+      "config": {}
+    },
+    "outputs/smoothgate_step0_L2.json": {
+      "sha256": "4d573e2576c519d190115722193928b011a883ec3e30f08323339e8bd851aa01",
+      "config": {
+        "steps": 3000,
+        "seeds": 10
+      }
+    },
+    "outputs/smoothgate_step0_L2_beta12.json": {
+      "sha256": "397b559753f324e9eb2eeeb1b3c4a5fce891a14f7bc5b35c04bcf1a8d07c96a8",
+      "config": {
+        "steps": 3000,
+        "seeds": 10
+      }
+    },
+    "outputs/sparse_matmul_benchmark.json": {
+      "sha256": "4e758976fcd9c323cbcffd05564cd9796b00378134942b67689a18697143e238",
+      "config": {}
+    },
+    "outputs/tbt_laminar_L6_N512_opt.json": {
+      "sha256": "565193cfae57625eb1d0a198f9f7ed751c1e932b28c9f1201a17943e1c4a8916",
+      "config": {}
+    },
+    "outputs/tbt_laminar_L6_N512_opt_hsfvss.json": {
+      "sha256": "9d3f9492eb37ffa1f4e2ec07cc987ecb86f258abaef1e43b707a1668e2827aec",
+      "config": {}
+    },
+    "outputs/two_scale_L6_stage0.json": {
+      "sha256": "d7a4f71eb460945355cb177bf499f5e3010770f605cb68cc53fc0b74964575d3",
+      "config": {
+        "seeds": [
+          0
+        ]
+      }
+    },
+    "outputs/v13_14_L4_clamped_seeds5-10.json": {
+      "sha256": "c538e35507078df616ca1e5cc043a81d41a77cd34beee7be8d50bcf635223b83",
+      "config": {
+        "steps": 3000,
+        "seeds": 10
+      }
+    },
+    "scripts/ep_oja.py": {
+      "sha256": "3d12d4b051f2c4fc71927f646953fec0e6d24498113d0a450b5aef8ba6dafbba"
+    }
+  }
+}

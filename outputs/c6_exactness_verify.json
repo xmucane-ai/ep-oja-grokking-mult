@@ -1,0 +1,15 @@
+{
+ "claim": "C6",
+ "engine": "scripts/run_basis_swap_v13.py build_dlog_table",
+ "p": 53,
+ "g": 2,
+ "order_of_g": 52,
+ "order_expected": 52,
+ "exp_map_max_err": 0.0,
+ "homomorphism_violations": 0,
+ "homomorphism_checks": 140608,
+ "product_mismatches": 0,
+ "product_checks": 2704,
+ "exp_map_dft_err": 2.86175732768614e-13,
+ "paper_claim": "g=2 order 52 exact; exp map DFT err 1.42e-14; 0/140,608 homomorphism violations; 0/2704 product mismatches"
+}
