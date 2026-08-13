@@ -1,4 +1,7 @@
 # Tested environment (paper disclosure): Python 3.11, PyTorch 2.6.0+cu124, CUDA 12.4, NVIDIA RTX 3060
+# CPU-only / Apple Silicon (MPS) fallback works for inference and small probes
+# (see scripts/test_t_cliff.py --steps 200 for a CPU-safe example); full 10-seed
+# claims require the CUDA build.
 torch==2.6.0
-numpy>=1.24
-matplotlib>=3.7
+numpy>=1.24,<2.1
+matplotlib>=3.7,<3.10

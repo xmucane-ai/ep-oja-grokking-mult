@@ -1,0 +1,155 @@
+{
+  "0899333": {
+    "files": [
+      "outputs/neighborhood_sweep_stage0.json"
+    ]
+  },
+  "0a1dc29": {
+    "files": [
+      "outputs/boundary_map_arm3_stage2_seeds0-7_all.json"
+    ]
+  },
+  "0ce2a25": {
+    "files": [
+      "outputs/smoothgate_step0_L2.json"
+    ]
+  },
+  "103ce2e": {
+    "files": [
+      "outputs/tbt_laminar_L6_N512_opt_hsfvss.json"
+    ]
+  },
+  "233f0a1": {
+    "files": [
+      "outputs/v13_14_L4_clamped_seeds5-10.json"
+    ]
+  },
+  "2df27ca": {
+    "files": [
+      "outputs/learned_enc_L6_1_s0-1-2.json"
+    ]
+  },
+  "3745dbf": {
+    "files": [
+      "outputs/results_10seed.txt"
+    ]
+  },
+  "38c6702": {
+    "files": [
+      "outputs/basis_swap_v13_add-sanity_frac80_L6_N1536_T10.json",
+      "outputs/basis_swap_v13_mult-nostab_frac80_L6_N1536_T10.json"
+    ]
+  },
+  "5c39677": {
+    "files": [
+      "outputs/results_v14_temporal_dendritic_v3_N4096_L2.json"
+    ]
+  },
+  "5ea8114": {
+    "files": [
+      "outputs/l6eqcap_T10_10seeds.json",
+      "outputs/l6eqcap_T1_10seeds.json",
+      "outputs/l6eqcap_T5_10seeds.json"
+    ]
+  },
+  "6196ed0": {
+    "files": [
+      "outputs/prime_sweep_summary.json"
+    ]
+  },
+  "8440d1d": {
+    "files": [
+      "scripts/schema_gate2.py"
+    ]
+  },
+  "87c7250": {
+    "files": [
+      "outputs/basis_swap_v13_mult-stab_frac80_L6_N1536_T10.json"
+    ]
+  },
+  "8bcd0cf": {
+    "files": [
+      "outputs/sparse_matmul_benchmark.json"
+    ]
+  },
+  "8cad9ef": {
+    "files": [
+      "outputs/ep_mult_tcliff_banking_L6_N1536.json"
+    ]
+  },
+  "8fa1713": {
+    "files": [
+      "scripts/schema_gate2.py"
+    ]
+  },
+  "920a352": {
+    "files": [
+      "scripts/schema_gate2.py"
+    ]
+  },
+  "9c8d686": {
+    "files": [
+      "outputs/bp_control_arm1_mult_tcliff_L6_N1536.json"
+    ]
+  },
+  "ac17205": {
+    "files": [
+      "outputs/fresh_seed_confirm_100-104_L6_N1536_T10.json"
+    ]
+  },
+  "b200be2": {
+    "files": [
+      "docs/PROBE_P97_LEARNABILITY_VS_CAPACITY_VERDICT.md"
+    ]
+  },
+  "be37982": {
+    "files": [
+      "outputs/smoothgate_step0_L2_beta12.json"
+    ]
+  },
+  "beb51ae": {
+    "note": "prose ref, no file"
+  },
+  "c0ba6cd": {
+    "files": [
+      "outputs/matched_mult_L6_N1536_T10.json",
+      "outputs/matched_mult_L6_N1536_T10_alignment.json"
+    ]
+  },
+  "c8bffc3": {
+    "files": [
+      "outputs/coex/coex_C3_10seeds.json",
+      "outputs/coex/coex_Coex1_10seeds.json"
+    ]
+  },
+  "cb14e16": {
+    "files": [
+      "outputs/p97wall_D2_p97_N1536_S8000.json"
+    ]
+  },
+  "d9ff257": {
+    "files": [
+      "outputs/bp_control_arm1_mult_main_L6_N1536_T10.json"
+    ]
+  },
+  "ddda769": {
+    "files": [
+      "outputs/bp_control_arm1_mult_main_L6_N1536_T10_S10000_n10.json"
+    ]
+  },
+  "eedfc17": {
+    "files": [
+      "outputs/two_scale_L6_stage0.json"
+    ]
+  },
+  "f4a7791": {
+    "files": [
+      "outputs/p97wall_I2_p41_N1536_S3000.json"
+    ]
+  },
+  "f6a750b": {
+    "files": [
+      "outputs/rca_e1_dense_mlp_h512_nh2_relu_wd1.0_S20000.json"
+    ]
+  }
+}

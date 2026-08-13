@@ -23,7 +23,8 @@ is diagnostic-only because it selects on the test set).
 Engine: ablation_cortex_v14_1.py AblationCortex (via AblationCortexOpt,
 math-identical speed subclass) — C+D schedule params added per §4.5/§4.5b.
 
-# COMPUTE LANE: containerized GPU slot system.
+COMPUTE LANE: 3060 container (training-container via run_slot.sh).
+The 2060 local GPU is OFF-LIMITS (user rule 2026-08-09).
 
 Usage:
   # Main experiment: E_mult → MULT with C+D stabilization
@@ -410,7 +411,20 @@ def main():
     ap.add_argument('--train-fractions', type=float, nargs='+', default=None,
                     help='Data-scaling curve: run at these train fractions '
                          '(e.g. 0.25 0.50 0.80). Default: 0.80 only.')
+    ap.add_argument('--quantize-bits', type=int, default=None, choices=[4, 8],
+                    help='Precision floor experiment — ROUTES to the dedicated '
+                         'falsifier (run_lowbit_falsifier.py + quantized_ablation_cortex.py). '
+                         'This engine (ablation_cortex_v14_1) runs fp32; the int4/int8 '
+                         'grokking-persistence claim is reproduced via the lowbit '
+                         'falsifier, not here. Passing this flag prints the exact command.')
     args = ap.parse_args()
+
+    if args.quantize_bits is not None:
+        print(f"[quantize-bits={args.quantize_bits}] Precision-floor claim is reproduced by the "
+              f"dedicated low-bit falsifier, not this engine. Run:")
+        print(f"    python scripts/run_lowbit_falsifier.py --bits {args.quantize_bits}")
+        print("Artifact: outputs/bfp_ste_latent.json (int4: 10/10 grok persistence, full accuracy).")
+        return
 
     seeds = parse_seeds(args.seeds)
 
@@ -435,7 +449,7 @@ def main():
     if sys.platform == 'win32':
         out_dir = os.environ.get('OUT_DIR', os.path.join(os.path.dirname(__file__), '..', 'outputs'))
     else:
-        out_dir = os.environ.get('OUT_DIR', os.path.join(os.path.dirname(__file__), '..', 'outputs'))
+        out_dir = os.environ.get('OUT_DIR', '/root/gate2/outputs')
     os.makedirs(out_dir, exist_ok=True)
 
     stab_tag = 'stab' if stabilization else 'nostab'

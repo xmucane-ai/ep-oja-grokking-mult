@@ -75,6 +75,23 @@ this repository, so a reviewer can verify that a downloaded file is
 byte-identical to the one used to generate the paper's figures and tables —
 independently of the private-history commit SHAs cited in the paper.
 
+## Reviewer toolkit (reproducibility index)
+
+- `python reproduce.py` — every `outputs/` artifact → its producing script and
+  exact command. `--check` verifies all paper-cited artifacts resolve;
+  `--verify-hashes` re-checks the SHA256 manifest.
+- `legacy_sha_map.json` — resolves every private-history commit SHA cited in
+  the paper (e.g. 87c7250, 38c6702) to the byte-identical public artifact.
+  Regenerate with `python build_legacy_sha_map.py`.
+- `python scripts/test_t_cliff.py` — fast (600-step, 1-seed) probe of the EP
+  settling-time cliff (T=1/5/10), showing per-layer error norms without a full
+  run. CPU-safe; the diagnostic, not the banked 10-seed claims.
+- Precision floor (int4): `python scripts/run_lowbit_falsifier.py --bits 4`
+  (artifact `outputs/bfp_ste_latent.json`); the main engine runs fp32 —
+  `python scripts/run_basis_swap_v13.py --quantize-bits 4` prints the exact route.
+- `provenance.json` lists SHA256 of every artifact; verify with
+  `python reproduce.py --verify-hashes`.
+
 ## Honesty notes
 
 - The BP control arm is **budget-matched, not an impossibility claim**:
