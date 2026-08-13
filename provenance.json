@@ -436,6 +436,24 @@
     },
     "scripts/ep_oja.py": {
       "sha256": "3d12d4b051f2c4fc71927f646953fec0e6d24498113d0a450b5aef8ba6dafbba"
+    },
+    "outputs/phi_matters_control_results.json": {
+      "sha256": "b556464150b317eb0a177717361f651ce1ef19cbdefe5e256cee894d75f9bf28"
+    },
+    "outputs/bfp_ste_latent.json": {
+      "sha256": "de2644287f87ce90b3046e676819eb5fe409d12ade93ba01dbf038cd35ab4fc8"
+    },
+    "outputs/cfg_L1c_fixed_enc_seeds0-9.json": {
+      "sha256": "2112595b71e56d2bd232b0c5e7f0e654b10f258af38c185162f9a7123992442e"
+    },
+    "outputs/cfg_L1_learned_enc_seeds0-9.json": {
+      "sha256": "70433451354db85b6a483dbf2c44107c029ec642abd91c013fb43434b37642a5"
+    },
+    "outputs/firing_rate_ablation_L6.json": {
+      "sha256": "b6a72106aeae0ee7274d50050cac42837b31dcf416cd99ff089ecacd939f05f6"
+    },
+    "outputs/alphabet_arm2_confirm_frequency_seeds0-9.json": {
+      "sha256": "748cfb8bb6decab263146c7ffaac12e5ee54a50189f5b177eea2ac242da70cec"
     }
   }
 }
