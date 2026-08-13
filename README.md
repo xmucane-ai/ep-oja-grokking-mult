@@ -5,8 +5,8 @@
 This repository contains the paper, the engine, and every artifact cited in the
 manuscript — the complete evidence trail for:
 
-> **To our knowledge, the first grokking of modular arithmetic under a purely
-> local, backprop-free learning rule.**
+> **To our knowledge, the first grokking of modular arithmetic under a locally
+> plastic, backprop-free learning rule.**
 
 ## The claim, in one paragraph
 
